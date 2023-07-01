@@ -99,7 +99,7 @@ mul.addEventListener("click", function (e) {
         const res = calulateResult(operandA, operandB, "*");
         out.setAttribute("value", parseInt(res));
         previousValue = res;
-        out.setAttribute("value", (previousValue += "/"));
+        out.setAttribute("value", (previousValue += "*"));
       } else {
         if (previousValue[previousValue.length - 1] !== "*") {
           out.setAttribute("value", (previousValue += "*"));
